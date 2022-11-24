@@ -26,6 +26,10 @@ module.exports = (sequelize) => {
       type: DataTypes.DECIMAL,
       allowNull: true
     },
+    platforms: {
+      type:DataTypes.STRING,
+      allowNull: false
+    },
     image: {
       type:DataTypes.STRING,
       allowNull: true

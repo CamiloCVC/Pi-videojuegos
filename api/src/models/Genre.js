@@ -5,14 +5,15 @@ module.exports = (sequelize) => {
   // defino el modelo
    sequelize.define('genre', {
       id: {
-         type: DataTypes.INTEGER,
-         allowNull: false,
-         primaryKey: true,
+         type: DataTypes.UUID,
+         defaultValue: DataTypes.UUIDV4,
+         unique: true,
+         primaryKey: true
       },
       name: {
-         type: DataTypes.ENUM(
+         type: DataTypes.ARRAY(DataTypes.ENUM(
             "Action", "Indie", "Adventure", "RPG", "Strategy", "Shooter", "Casual", "Simulation", "Puzzle", "Arcade", "Platformer", "Racing", "Massively Multiplayer", "Sports", "Fighting", "Family", "Board Games", "Educational", "Card",
-         ),
+         )),
          allowNull: false
       }
    }, {
