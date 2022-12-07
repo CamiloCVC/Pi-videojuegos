@@ -41,14 +41,14 @@ const getDBinfo = async () => {
         })
         const allgames = await dbjuegos.map(juego => {return{
             id: juego.id,
-            description: juego.description,
             name: juego.name,
+            release: juego.release,
             rating: juego.rating,
-            img: juego.background_image,
+            description: juego.description,
+            img: juego.image,
             platforms: juego.platforms,
-            release: juego.released,
             createdInDb: juego.createdInDb,
-            generes: juego.genres.map(genere=> genere.name)
+            generes: juego.genres.map(genere=> genere.name[0])
         }})
         return allgames
     } catch (error) {

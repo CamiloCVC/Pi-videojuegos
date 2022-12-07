@@ -1,0 +1,98 @@
+.comtainerDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.backgroundDetails {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  /* background-image: url("https://i.imgur.com/lL6tQfy.png"); */
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.content {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.575);
+  width: 60vw;
+  min-height: 80vh;
+  position:relative;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+  padding: 10px 80px;
+}
+
+.content div{
+    margin: 10px;
+}
+
+.titleDet{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 6vh;
+}
+.descriptionDet{
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+
+}
+.dataDet{
+    font-size: 18px;
+}
+
+.volverBut {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+.volverBut:hover .button_top {
+    /* Pull the button upwards when hovered */
+   transform: translateY(-0.33em);
+  }
+  
+.volverBut:active .button_top {
+    /* Push the button downwards when pressed */
+   transform: translateY(0);
+  }

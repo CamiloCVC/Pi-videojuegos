@@ -9,7 +9,7 @@ const getApiGameById = async (id) =>{
         gameById.push({
             id: ApiGamesById.data.id,
             name: ApiGamesById.data.name,
-            description: ApiGamesById.data.description,
+            description: ApiGamesById.data.description.replaceAll(/<(“[^”]”|'[^’]’|[^'”>])*>/g, ""),
             release: ApiGamesById.data.released,
             rating: ApiGamesById.data.rating,
             img: ApiGamesById.data.background_image,

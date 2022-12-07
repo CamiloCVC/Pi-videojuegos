@@ -1,0 +1,30 @@
+.PagContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PagContainer ul{
+    list-style: none;
+    display: flex;
+}
+.PagContainer li{
+    margin: 10px;
+}
+.PageButton{
+    background-color: rgb(100, 61, 136);
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: rgb(214, 77, 241);
+    border: 1px solid rgb(214, 77, 241);    
+    box-shadow: 0 0 1.8em rgb(214, 77, 241);
+}
+
+.PageButton:hover{
+    color:rgb(100, 61, 136) ;
+    background-color: rgb(214, 77, 241);
+    box-shadow: 0 0 1.5em 0.5em rgb(214, 77, 241),
+    inset 0 0 1em 0.4em rgb(214, 77, 241);
+}

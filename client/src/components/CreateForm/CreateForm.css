@@ -1,0 +1,100 @@
+.createContainer{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./FondoBlured.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.createForm{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 60vw;
+    justify-content: center;
+    background-color: rgba(250, 235, 215, 0.555);
+    
+}
+
+.checkboxCont{
+    width: 25%;
+}
+
+.inputTextCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.inputTextCont div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 60%;
+    text-align: left;
+    justify-content: flex-start;
+    
+}
+p{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+textarea{
+    resize: none;
+}
+
+.inputsCont{
+    display: flex;
+    height: 80%;
+    width: 60vw;
+    padding: 40px;
+    
+}
+
+.submitDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.submitBut {
+    /* Variables */
+   --button_radius: 0.75em;
+   --button_color: #e8e8e8;
+   --button_outline_color: #000000;
+   font-size: 17px;
+   font-weight: bold;
+   border: none;
+   margin-right: 10px;
+   border-radius: var(--button_radius);
+   background: var(--button_outline_color);
+  }
+  
+  .button_top {
+   display: block;
+   box-sizing: border-box;
+   border: 2px solid var(--button_outline_color);
+   border-radius: var(--button_radius);
+   padding: 0.75em 1.5em;
+   background: var(--button_color);
+   color: var(--button_outline_color);
+   transform: translateY(-0.2em);
+   transition: transform 0.1s ease;
+  }
+  
+.submitBut:hover .button_top {
+   transform: translateY(-0.33em);
+  }
+  
+.submitBut:active .button_top {
+   transform: translateY(0);
+  }

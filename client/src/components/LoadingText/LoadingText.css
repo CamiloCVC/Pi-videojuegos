@@ -1,0 +1,61 @@
+
+.spinner1 {
+    height: 50px;
+    width: max-content;
+    margin: 0 auto 0 auto ;
+    padding-left: 15px;
+    /* position: relative; */
+    bottom: -150px; 
+    font-size: 40px;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 1em;
+    color: rgb(218, 91, 243);
+    text-shadow: #ff2d95 0px 0px 5px, #ff2d95 0px 0px 10px, #ff2d95 0px 0px 15px,
+      #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
+      #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-y: auto; */
+  }
+  
+  .spinner1 span {
+    animation: loading6454 1.75s ease infinite;
+  }
+  
+  .spinner1 span:nth-child(2) {
+    animation-delay: 0.25s;
+  }
+  
+  .spinner1 span:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  .spinner1 span:nth-child(4) {
+    animation-delay: 0.75s;
+  }
+  
+  .spinner1 span:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  .spinner1 span:nth-child(6) {
+    animation-delay: 1.25s;
+  }
+  
+  .spinner1 span:nth-child(7) {
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes loading6454 {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  

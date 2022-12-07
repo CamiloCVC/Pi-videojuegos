@@ -1,0 +1,51 @@
+.SearchBarCont {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 350px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  line-height: 28px;
+  padding: 1rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: rgb(100, 61, 136);
+  box-shadow: 0 0 1.2em 0.25em rgb(218, 91, 243);
+  color: #0d0c22;
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #a9a9ad;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 1.2em 0.25em rgb(218, 91, 243);
+}
+
+.buttonSubmit{
+    position: relative;
+    left: -40px;
+    background-color: transparent;
+    border: none;
+    font-size: 23px;
+    position: relative;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    transition: transform .2s,-webkit-transform .2s;
+}
+
+.buttonSubmit:hover{
+    transform: scale(1.3); 
+}

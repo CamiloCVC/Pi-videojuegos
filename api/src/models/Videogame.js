@@ -23,11 +23,11 @@ module.exports = (sequelize) => {
       allowNull: true
     },
     rating: {
-      type: DataTypes.DECIMAL,
+      type: DataTypes.STRING,
       allowNull: true
     },
     platforms: {
-      type:DataTypes.STRING,
+      type: DataTypes.ARRAY(DataTypes.STRING),
       allowNull: false
     },
     image: {

@@ -1,0 +1,167 @@
+::-webkit-scrollbar {
+  display: none;
+}
+.HeaderHome {
+  background-color: rgba(0, 0, 0, 0.568);
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 13vh;
+  z-index: 2;
+  color: antiquewhite;
+}
+
+.createButton {
+  --glow-color: rgb(218, 91, 243);
+  --glow-spread-color: rgba(218, 91, 243, 0.726);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 0 1em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  text-align: center;
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1.2em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+  width: 180px;
+  height: 50px;
+}
+
+.createButton:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1.5em 0.5em var(--glow-color),
+    inset 0 0 1em 0.4em var(--glow-color);
+}
+
+.createButton:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.4em 0.25em var(--glow-color);
+}
+
+.TitleHeader h1 {
+  color: rgb(218, 91, 243);
+  text-shadow: 0 0 1.2em rgb(214, 77, 241);
+  font-size: 48px;
+}
+
+.TitleHeader,
+.CreateHeader,
+.SearchHeader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./FondoBlur1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+.FiltersContainer {
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 40px;
+  margin: 30px 0;
+  height: 8vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cardsContainer {
+  display: flex;
+  min-height: 78.5vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.customSelect {
+  position: relative;
+  display: block;
+  min-width: 20%;
+  height: 40px;
+  margin: 0 10px;
+  border: 1px solid rgb(218, 91, 243);
+  background-color: rgb(100, 61, 136);
+  box-shadow: 0 0 1.2em 0.25em rgb(218, 91, 243);
+  z-index: 10;
+  border-radius: 1em;
+}
+.customSelect select {
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  min-width: 20%;
+  padding: 12px 55px 15px 15px;
+  font-size: 14px;
+  color: rgb(218, 91, 243);
+}
+.customSelect:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  line-height: 38px;
+  content: "∨";
+  text-align: center;
+  color: rgb(218, 91, 243);
+  font-size: 24px;
+  border-left: 1px solid rgb(218, 91, 243);
+  z-index: -1;
+}
+
+
+.resetButton {
+    --glow-color: rgb(218, 91, 243);
+    --glow-spread-color: rgba(218, 91, 243, 0.726);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: 1px solid var(--glow-color);
+    padding: 5px;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1.2em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    width: 120px;
+    height: 40px;
+  }
+  
+  .resetButton:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1.5em 0.5em var(--glow-color),
+      inset 0 0 1em 0.4em var(--glow-color);
+  }
