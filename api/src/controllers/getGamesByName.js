@@ -62,9 +62,12 @@ const getAllGamesByName = async (name)=>{
         const ApiInfo = await getApiInfoByName(name)
         const DBInfo = await getDBInfoByName(name)
         const allinfo = DBInfo.concat(ApiInfo).slice(0,15)
+        if (allinfo.length === 0){
+            throw new Error
+        }
         return allinfo
     } catch (error) {
-        console.log(error)
+        return ("No se ha encontrado el juego")
     }
 }
 

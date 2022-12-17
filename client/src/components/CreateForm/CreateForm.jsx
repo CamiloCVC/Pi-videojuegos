@@ -30,9 +30,9 @@ export default function CreateForm() {
     if (!data.genres.length) {
       error.genres = "genres must be completed";
     }
-    if (!data.released) {
-      error.released = "22/22/2222";
-    }
+    // if (!data.released) {
+    //   error.released = "22/22/2222";
+    // }
     if (!data.rating) {
       error.rating = 1;
     }
@@ -73,6 +73,7 @@ export default function CreateForm() {
     e.preventDefault();
     const errorsFields = validate(data);
     setErrors(errorsFields);
+    console.log(errorsFields)
     if (!Object.keys(errorsFields).length) {
       await dispatch(postVideogame(data));
       setData({

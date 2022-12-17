@@ -104,7 +104,7 @@ export default function Home() {
             <h1>VIDEOGAMES</h1>
           </div>
           <div className="SearchHeader">
-            <SearchBar />
+            <SearchBar paginado={paginado}/>
           </div>
         </div>
         <div className="FiltersContainer">

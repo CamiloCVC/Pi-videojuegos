@@ -14,6 +14,9 @@ export const getGames=()=>{
 export const getGamesByName=(name)=>{
     return async function(dispach){
         let gamesByName = await axios.get(`http://localhost:3001/videogames?name=${name}`)
+        if (gamesByName.data === "No se ha encontrado el juego"){
+            return alert(gamesByName.data)
+        }
         return dispach({
             type: 'GET_GAMES_NAME',
             payload: gamesByName.data

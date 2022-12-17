@@ -4,7 +4,7 @@ import { getGamesByName } from "../../actions";
 import { useDispatch } from "react-redux";
 import "./SearchBar.css"
 
-export default function SearchBar(){
+export default function SearchBar({paginado}){
     const [games, setGames] = useState("");
     
     const dispatch = useDispatch()
@@ -14,6 +14,7 @@ export default function SearchBar(){
         if (games !== ""){
             onSearch(games);
             setGames("")
+            paginado(1)
         }
     }
     const onSearch = (games)=>{

@@ -3,9 +3,10 @@ import Card from "../Card/Card";
 import "./CardsContainer.css"
 
 export default function CardsContainer({ AllGames }) {
+  console.log(AllGames)
   return (
     <div className="CardsCont">
-      {AllGames.map((g) => {
+      { AllGames.map((g) => {
         return (
           <Card
             key={g.id}
